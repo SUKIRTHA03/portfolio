@@ -1,0 +1,195 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f7f2ef; /* soft pastel brown background */
+    color: #4b3f3f;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #a1866f; /* pastel brown */
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    border-radius: 0 0 10px 10px;
+}
+
+nav .logo {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e0d6c8; /* lighter pastel brown hover */
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: #e9e0da; /* very soft pastel brown */
+    color: #4b3f3f; /* dark brown text */
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+header h1 {
+    font-size: 2.8em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Sections */
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Section Headings */
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #a1866f; /* pastel brown headings */
+    border-bottom: 2px solid #d6c9b8; /* soft underline */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Card / Box Style */
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.08);
+}
+
+.card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* About Me & Skills Card Layout */
+.about .card,
+.skills .card {
+    margin: 20px auto;
+    transition: transform 0.4s, box-shadow 0.4s, background-color 0.4s;
+}
+
+/* Hover Effect for About Me & Skills */
+.about .card:hover,
+.skills .card:hover {
+    transform: translateY(-5px) scale(1.02); /* lift and slightly enlarge */
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.15); /* stronger shadow */
+    background-color: #f0e6dc; /* soft highlight on hover */
+}
+
+/* Lists */
+ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+/* Links */
+a {
+    color: #a1866f; /* pastel brown link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #7a5f4a; /* darker brown hover */
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    padding: 12px 15px;
+    border: 1px solid #d6c9b8;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 100%;
+    background-color: #f9f5f2;
+    color: #4b3f3f;
+}
+
+.contact-form button {
+    padding: 12px;
+    background-color: #a1866f;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #7a5f4a;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #a1866f;
+    color: white;
+    margin-top: 40px;
+    font-size: 0.95em;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
